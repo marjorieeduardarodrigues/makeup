@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <!-- Latest compiled and minified CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+    <!--Container-Fluid em que abrigara o Logotipo do Sistema -->
+    <div class="Container-Fluid text-center" style="margin-top: 30px; margin-bottom: 30px;">
+      <img src="">
+      <h1>aqui ficara o logotipo do sistema</h1>
+    </div>
+
+    <!--aqui ficara a barra de navegação do sistema-->
+
+    <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: blueviolet;" sticky-top">
+        <div class="container-fluid">
+         
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#">link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="formLogin.html">login</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="text" placeholder="Search">
+              <button class="btn btn-primary" type="button">Search</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+
+      <!--container que abrigara o conteudo da página-->
+    <div class="container" style="margin-top:30px; margin-bottom:100px;">
+
+        <h1 class="text-center">Área para Acesso ao Sistema:</h1>
+
+        <form action="#" method ="POST" class="was-validate">  
+
+           <div class="form-floating mt-3 mb-3">
+                <input type="email" name="emailUsuario" placeholder="informe o email" class="form-control" required>
+                <label for="emailUsuario">Email</label>
+            </div>
+
+            <div class="form-floating mt-3 mb-3">
+                <input type="password" name="senhaUsuario" placeholder="infome a senha" class="form-control" required>
+                <label for="senhaUsuario">Senha</label>
+            </div>
+
+             <button type="submit" name="btlogin" class="btn btn-primary">login</button>
+
+        </form>
+
+        <a href="formUsuario" title="cadastra-se" class="mt-3 mb-3">
+            ainda não é cadastrado ? clique aqui!
+        </a>
+    </div>
+
+    <!--container que obrigará o rodapé da paginá-->
+    <div class="container-fluid text-center bg-dark text-light fixed-bottom">
+        <P>
+            interfaces de sistema web desenvolvido por
+            <b>
+                <a href="mailto:paulo.silva@ifpr.edu.br?subject=tecnologia web" title="entre em contato">
+                    paulo.silva@irpr.edu.br
+                </a>
+            </b>
+        </P>
+    </div>
+</body>
+</html>
